@@ -6,20 +6,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.evolutionnext</groupId>
-    <artifactId>kafka-client</artifactId>
+    <artifactId>kafka-connect-study</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>kafka-client</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <name>${project.artifactId}</name>
+    <url>https://github.com/dhinojosa/kafka-connect-study</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
-        <kafka.version>2.1.0</kafka.version>
+        <kafka.version>2.5.0</kafka.version>
         <avro.version>1.8.2</avro.version>
-        <confluent.version>5.0.0</confluent.version>
+        <confluent.version>5.4.1</confluent.version>
     </properties>
 
     <!--necessary to resolve confluent dependencies-->
@@ -139,8 +136,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
         </plugins>
