@@ -31,9 +31,7 @@ public class MyDatabaseRunner {
         Random random = new Random();
         AtomicBoolean done = new AtomicBoolean(false);
 
-        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-            done.set(true);
-        }));
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> done.set(true)));
 
         int orderID = getLatestOrderId(conn);
 
